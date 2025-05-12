@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adicionar Representante - LetsSign Authenticator</title>
+<!-- Link para o CSS do Bootstrap via CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Link para o arquivo CSS customizado -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Ícones do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+<!-- Cabeçalho da Aplicação (padronizado) -->
+<header class="app-header bg-primary text-white py-3 mb-4 border-bottom">
+<div class="container d-flex justify-content-between align-items-center">
+<a class="text-white text-decoration-none" href="dashboard.html">
+<h1 class="h5 mb-0">LetsSign <span class="fw-light">Authenticator</span></h1>
+</a>
+<span class="h6 mb-0 user-greeting">Olá, Usuário</span>
+</div>
+</header>
+<main class="container pb-5">
+<h2 class="mb-4 text-center fw-bold">Adicionar Novo Representante</h2>
+<div class="card p-4 p-md-5 shadow-sm mx-auto" style="max-width: 700px;">
+<form id="addRepresentativeForm">
+<div class="row g-3">
+<div class="col-md-12">
+<div class="form-floating">
+<input class="form-control" id="repFullName" placeholder="Nome Completo" required="" type="text"/>
+<label for="repFullName">Nome Completo</label>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-floating">
+<input class="form-control" id="repEmail" placeholder="Email" required="" type="email"/>
+<label for="repEmail">Email</label>
+</div>
+</div>
+<div class="col-md-12">
+<div class="form-floating">
+<input class="form-control" id="repRole" placeholder="Cargo/Função" required="" type="text"/>
+<label for="repRole">Cargo/Função</label>
+</div>
+</div>
+<!-- Adicionar mais campos conforme necessário -->
+<div class="col-12 mt-4">
+<button class="btn btn-primary w-100 btn-lg" id="saveRepresentativeButton" type="submit">Salvar Representante</button>
+</div>
+<div class="col-12 mt-2">
+<a class="btn btn-outline-secondary w-100" href="assinaturas_delegadas.html">Cancelar</a>
+</div>
+</div>
+</form>
+</div>
+</main>
+<!-- Link para o JavaScript do Bootstrap (Bundle) via CDN (inclui Popper) -->
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Link para o arquivo JavaScript customizado -->
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+/* Estilos Globais e Utilitários */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card, .auth-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.login-logo {
+    max-width: 220px; /* Ajuste conforme o logo */
+    margin-bottom: 1rem;
+}
+
+.auth-icon {
+    width: 70px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.token-inputs .form-control.token-input {
+    width: 50px;
+    height: 60px;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+}
+
+.arrow {
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.btn-success.rounded-pill,
+.btn-primary.rounded-pill {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.1rem;
+}
+
+/* Cabeçalho da Aplicação Padronizado */
+.app-header {
+    /* Estilos para o cabeçalho já definidos no HTML com classes Bootstrap */
+}
+
+.app-header .user-icon {
+    width: 28px; /* Tamanho do ícone do usuário no cabeçalho */
+    height: 28px;
+    border-radius: 50%;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Estilos para o Dashboard */
+.dashboard-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dashboard-card .btn {
+    margin-top: auto; /* Alinha o botão na parte inferior do card */
+}
+
+/* Estilos para a página de Gerenciamento de Token */
+.current-token-display {
+    letter-spacing: 2px; /* Melhora a legibilidade do token */
+}
+
+.step-item .step-number {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para a página de Visualização de Documento */
+.document-viewer {
+    background-color: #f8f9fa; /* Um cinza um pouco mais claro */
+    border: 1px solid #dee2e6;
+    min-height: 400px; /* Altura mínima para o visualizador */
+    padding: 1.5rem;
+}
+
+/* Estilos para a página de Assinaturas Delegadas */
+.avatar-initials {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Ajustes gerais para consistência */
+.card {
+    border: none; /* Remove bordas padrão dos cards para um look mais clean com shadow */
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(0, 123, 255, 0.25); /* Sombra de foco padrão do Bootstrap */
+    border-color: #86b7fe;
+}
+
+/* Comentário em português: Este arquivo CSS contém estilos customizados 
+   para complementar o Bootstrap e dar uma identidade visual ao projeto LetsSign Authenticator.
+   Ele é organizado por seções para facilitar a manutenção e entendimento, 
+   seguindo as boas práticas de desenvolvimento web para um estudante de ADS. */
+

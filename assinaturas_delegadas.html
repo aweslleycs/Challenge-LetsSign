@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assinaturas Delegadas - LetsSign Authenticator</title>
+<!-- Link para o CSS do Bootstrap via CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Link para o arquivo CSS customizado -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Ícones do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+<!-- Cabeçalho da Aplicação (padronizado) -->
+<header class="app-header bg-primary text-white py-3 mb-4 border-bottom">
+<div class="container d-flex justify-content-between align-items-center">
+<a class="text-white text-decoration-none" href="dashboard.html">
+<h1 class="h5 mb-0">LetsSign <span class="fw-light">Authenticator</span></h1>
+</a>
+<span class="h6 mb-0 user-greeting">Olá, Usuário</span>
+</div>
+</header>
+<main class="container pb-5"><div class="card p-4 shadow-sm mb-4"><h3 class="h5 mb-3"><i class="bi bi-people-fill me-2"></i>Representantes</h3><ul class="list-group" id="listaRepresentantes"><li class="list-group-item text-muted">Nenhum representante cadastrado.</li></ul></div>
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h2 class="fw-bold mb-0"><i class="bi bi-people-fill me-2"></i>Assinaturas Delegadas</h2>
+<a class="btn btn-primary" href="adicionar_representante.html" id="addRepresentativeBtn">
+<i class="bi bi-plus-circle-fill me-2"></i>Adicionar Representante
+            </a>
+</div>
+<div class="alert alert-warning bg-warning-subtle border-warning-subtle p-3 mb-4" role="alert">
+<h4 class="alert-heading h6"><i class="bi bi-exclamation-triangle-fill me-2"></i>Importante sobre Assinaturas Delegadas</h4>
+<p class="mb-0 small">Representantes autorizados podem assinar documentos em seu nome. Todas as assinaturas delegadas são claramente identificadas e registradas para fins de auditoria.</p>
+</div>
+<!-- Lista de Representantes (Conteúdo será populado dinamicamente ou estaticamente) -->
+<div class="list-group shadow-sm" id="representativesList">
+<!-- Exemplo de Item Representante 1 -->
+<div class="list-group-item list-group-item-action p-3">
+<div class="d-flex w-100 justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<span class="avatar-initials bg-secondary text-white rounded-circle me-3">G</span>
+<div>
+<h5 class="mb-1 fw-semibold">Gustavo Penha</h5>
+<p class="mb-1 small text-muted">gustavo_penha@gmail.com</p>
+<p class="mb-0 small text-muted">Diretor Executivo</p>
+</div>
+</div>
+<div>
+<span class="badge bg-success-subtle text-success-emphasis me-2">Ativo</span>
+<button class="btn btn-sm btn-outline-danger border-0" title="Remover">
+<i class="bi bi-trash3-fill"></i>
+</button>
+</div>
+</div>
+</div>
+<!-- Exemplo de Item Representante 2 -->
+<div class="list-group-item list-group-item-action p-3">
+<div class="d-flex w-100 justify-content-between align-items-center">
+<div class="d-flex align-items-center">
+<span class="avatar-initials bg-info text-white rounded-circle me-3">F</span>
+<div>
+<h5 class="mb-1 fw-semibold">Fabio Cortez</h5>
+<p class="mb-1 small text-muted">fabio.cortez@gmail.com</p>
+<p class="mb-0 small text-muted">Líder de Criação</p>
+</div>
+</div>
+<div>
+<span class="badge bg-warning-subtle text-warning-emphasis me-2">Pendente</span>
+<button class="btn btn-sm btn-outline-danger border-0" title="Remover">
+<i class="bi bi-trash3-fill"></i>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="card p-4 mt-4 shadow-sm">
+<h3 class="h5 mb-3"><i class="bi bi-shield-lock-fill me-2"></i>Segurança e Conformidade</h3>
+<p class="small text-muted mb-0">Todas as ações de representantes são registradas e auditáveis. Você será notificado por email sempre que um representante realizar uma assinatura em seu nome.</p>
+</div>
+</main>
+<!-- Link para o JavaScript do Bootstrap (Bundle) via CDN (inclui Popper) -->
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Link para o arquivo JavaScript customizado -->
+<script src="js/script.js"></script>
+<script src="js/script.js"></script>
+<script>
+    window.onload = checarTokenAntesDasAssinaturas;
+</script>
+</body>
+</html>

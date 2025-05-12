@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visualização de Documento - LetsSign Authenticator</title>
+<!-- Link para o CSS do Bootstrap via CDN -->
+<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet"/>
+<!-- Link para o arquivo CSS customizado -->
+<link href="css/style.css" rel="stylesheet"/>
+<!-- Ícones do Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+</head>
+<body class="bg-light">
+<!-- Cabeçalho da Aplicação (padronizado) -->
+<header class="app-header bg-primary text-white py-3 mb-4 border-bottom">
+<div class="container d-flex justify-content-between align-items-center">
+<a class="text-white text-decoration-none" href="dashboard.html">
+<h1 class="h5 mb-0">LetsSign <span class="fw-light">Authenticator</span></h1>
+</a>
+<span class="h6 mb-0 user-greeting">Olá, Usuário</span>
+</div>
+</header>
+<main class="container pb-5">
+<div class="text-center mb-4">
+<h2 class="fw-bold">Visualização do Contrato</h2>
+<p class="text-muted">Verifique o documento e realize a sua autenticação.</p>
+</div>
+<div class="card p-4 shadow-sm mb-4">
+<div class="d-flex justify-content-between align-items-center mb-3">
+<div>
+<h3 class="h5 mb-1">Contrato de Prestação de Serviço</h3>
+<p class="text-muted small mb-0">PDF 2.8MB</p>
+</div>
+<button class="btn btn-outline-primary" id="downloadDocumentBtn">
+<i class="bi bi-download me-2"></i>
+                    Download
+                </button>
+</div>
+<!-- Área de visualização do documento -->
+<div class="document-viewer bg-light p-3 border rounded" id="documentPreviewArea" style="height: 500px; overflow-y: auto;">
+<!-- Conteúdo do PDF simulado -->
+<p><strong>CONTRATO DE PRESTAÇÃO DE SERVIÇOS DE PUBLICIDADE DIGITAL INFLUENCER</strong></p>
+<p>Pelo presente instrumento particular, de um lado [NOME DO CONTRATANTE], com sede em [ENDEREÇO DO CONTRATANTE], inscrito no CNPJ sob o nº [CNPJ DO CONTRATANTE], neste ato representado por [REPRESENTANTE DO CONTRATANTE], doravante denominado CONTRATANTE, e de outro lado [NOME DO INFLUENCIADOR DIGITAL], portador do CPF nº [CPF DO INFLUENCIADOR], residente e domiciliado em [ENDEREÇO DO INFLUENCIADOR], doravante denominado CONTRATADO(A).</p>
+<p><strong>CLÁUSULA PRIMEIRA – DO OBJETO DO CONTRATO</strong></p>
+<p>O presente contrato tem como objeto a prestação de serviços de publicidade digital pelo(a) CONTRATADO(A) em suas redes sociais ([INDICAR AS REDES SOCIAIS E PERFIS]), visando a promoção da marca/produto/serviço [ESPECIFICAR A MARCA/PRODUTO/SERVIÇO] do CONTRATANTE.</p>
+<p>[Conteúdo extenso do documento simulado...]</p>
+<p>E, por estarem assim justos e contratados, assinam o presente instrumento em duas vias de igual teor e forma, na presença das duas testemunhas abaixo.</p>
+<p>Local e Data.</p>
+<p>_________________________<br/>CONTRATANTE</p>
+<p>_________________________<br/>CONTRATADO(A)</p>
+</div>
+</div>
+<div class="text-center">
+<button class="btn btn-success btn-lg rounded-pill px-5" id="signDocumentButton">Assinar Documento</button>
+</div>
+</main>
+<!-- Link para o JavaScript do Bootstrap (Bundle) via CDN (inclui Popper) -->
+<script crossorigin="anonymous" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Link para o arquivo JavaScript customizado -->
+<script src="js/script.js"></script>
+</body>
+</html>
